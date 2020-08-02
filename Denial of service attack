@@ -1,5 +1,3 @@
-#include <libnet.h>
-#define FLOOD_DELAY 5000 
 
 /*********************************************************\*
    Denial of service attack  *   
@@ -8,6 +6,9 @@
 **  Company:https://syber-defense-system.business.site    /    
                                    
 *\*********************************************************/
+
+#include <libnet.h>
+#define FLOOD_DELAY 5000 
 
 char *print_ip(u_long *ip_addr_ptr)
 {   return inet_ntoa( *((struct in_addr *)ip_addr_ptr) );
